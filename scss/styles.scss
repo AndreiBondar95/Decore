@@ -32,7 +32,7 @@ $border-m:50px;
 }
 %font-l{
 	font-size:40px;
-	line-height: 55px;
+	line-height: 55/40*100%;
 	font-weight:700;
 	text-shadow:3px 5px 10px rgba(106,106,90,0.2);
 }
@@ -80,18 +80,6 @@ $border-m:50px;
 	display:block;
 	background-repeat:no-repeat;
 }
-%grid-backrgound{
-	content:'';
-		display: block;
-		width:200px;
-		height:200px;
-		background-image: url('../img/Orel.svg');
-		background-repeat: no-repeat;
-		background-position:left;
-		background-size:200px;
-		position:absolute;
-		z-index:20;
-}
 //------------------Start--------------//
 *{
 	font-family:'Montserrat';
@@ -114,6 +102,9 @@ main{
 .f-nav{
 	@extend %scroll-menu;
 	z-index:100000;
+}
+.nav-container.f-nav + .header-content-box {
+	padding-top: 150px;
 }
 .nav-container{
 	width:100%;
@@ -1003,7 +994,7 @@ img{
 	.f-nav{
 		position:fixed;
 		top: 0; 
-		width:1000px;
+		width:100%;
 		background:$col-4;
 		box-shadow:0px 8px 10px 5px rgba(16,38,61,0.15);
 		z-index:1000;
@@ -1317,9 +1308,12 @@ max-width:992px;
 			left: 0;
 			z-index: 10;
 		}
+		.header.menu-open + main{
+			padding-top: 926px;
+		}
 		.header.menu-open #burger-icon {
 			position: absolute;
-			top: 40px;
+			top:30px;
 			right: 33px;
 		}
 		.header.header.menu-open .header-content-box{
@@ -1565,8 +1559,16 @@ height:57%;
 	.header{
 		width:$wth-s;
 	}
-	.nav-box-basket-number .nav-btn	{
-		margin-left:120px;
+	.nav-wrap .nav-box-basket-number .nav-btn{
+		margin-left:130px;
+	}
+	.header.menu-open .nav-btn	{
+		position: absolute;
+		bottom:-650px;
+		left:-40px;
+	}
+	.header.header.menu-open .nav-wrap .nav-box-basket-number .nav-link-number{
+		position: relative;
 	}
 	.nav-container{
 		max-width:$wth-s;
@@ -1614,6 +1616,8 @@ height:57%;
 			width:510px;
 			position:absolute;
 			top:100px;
+			left:60px;
+			
 		}
 	}
 	.subtitle-img-box{
@@ -1816,4 +1820,5 @@ height:57%;
 .footer-wrap .nav-menu-wrap-after{
 	width:100%;
 }
+
 }

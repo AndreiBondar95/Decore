@@ -482,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-content-box .subtitle-box .sub-heading, .wrap-about .heading-about-box .heading-about, .subtitle-about-box .subtitle-holder .subtitle-slogan, .colection-wrap .colection-heading-wrap h2, .sale-wrap .sale-heading {
   font-size: 40px;
-  line-height: 55px;
+  line-height: 137.5%;
   font-weight: 700;
   text-shadow: 3px 5px 10px rgba(106, 106, 90, 0.2); }
 
@@ -544,6 +544,9 @@ main {
 
 .f-nav {
   z-index: 100000; }
+
+.nav-container.f-nav + .header-content-box {
+  padding-top: 150px; }
 
 .nav-container {
   width: 100%;
@@ -1244,7 +1247,7 @@ main {
     .header-content-box .f-nav {
       position: fixed;
       top: 0;
-      width: 1000px;
+      width: 100%;
       background: #ffffff;
       box-shadow: 0px 8px 10px 5px rgba(16, 38, 61, 0.15);
       z-index: 1000; }
@@ -1468,9 +1471,11 @@ main {
     top: 0;
     left: 0;
     z-index: 10; }
+  .header.menu-open + main {
+    padding-top: 926px; }
   .header.menu-open #burger-icon {
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 33px; }
   .header.header.menu-open .header-content-box {
     display: none; }
@@ -1635,8 +1640,14 @@ main {
     width: 576px; }
   .header {
     width: 576px; }
-  .nav-box-basket-number .nav-btn {
-    margin-left: 120px; }
+  .nav-wrap .nav-box-basket-number .nav-btn {
+    margin-left: 130px; }
+  .header.menu-open .nav-btn {
+    position: absolute;
+    bottom: -650px;
+    left: -40px; }
+  .header.header.menu-open .nav-wrap .nav-box-basket-number .nav-link-number {
+    position: relative; }
   .nav-container {
     max-width: 576px; }
   .nav-wrap {
@@ -1670,7 +1681,8 @@ main {
     border-bottom: 1px solid rgba(51, 102, 153, 0.36);
     width: 510px;
     position: absolute;
-    top: 100px; }
+    top: 100px;
+    left: 60px; }
   .subtitle-img-box {
     width: 100%;
     height: 500px; }
