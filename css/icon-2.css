@@ -1,0 +1,148 @@
+.icon-facebok:before {
+  content: "";
+  display: block;
+  background-image: url("../img/facebok.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  width: 100px;
+  height: 100px;
+  color: #336699;
+  position: absolute;
+  top: 40px;
+  left: 632px; }
+
+.icon-facebok:after {
+  content: '';
+  display: block;
+  border-left: 1px solid #000;
+  height: 100px;
+  width: 2px;
+  position: absolute;
+  left: 635px;
+  top: 70px; }
+
+.icon-sms-1:before {
+  content: "";
+  background: url("../img/sms-2.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  color: #336699;
+  position: absolute;
+  top: 40px;
+  left: 595px; }
+
+.icon-sms-1:after {
+  content: '';
+  background: url("../img/sms-1.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: #336699;
+  position: absolute;
+  top: 43px;
+  left: 600px; }
+
+.icon-insta-1:before {
+  content: '';
+  background: url("../img/insta-2-2.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #336699;
+  position: absolute;
+  top: 45px;
+  left: 660px; }
+
+.icon-insta-1:after {
+  content: '';
+  background: url("../img/insta-1-1.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #336699;
+  position: absolute;
+  top: 40px;
+  left: 655px; }
+
+.icon-insta-3:before {
+  content: '';
+  background: url("../img/insta-3-3.svg");
+  background-repeat: no-repeat;
+  display: block;
+  color: #336699;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 42px;
+  left: 658px; }
+
+@media screen and (max-width: 1024px) {
+  .icon-facebok:before {
+    left: 840px;
+    top: 80px; }
+  .icon-insta-1:after {
+    left: 885px;
+    top: 79px; }
+  .icon-insta-1:before {
+    left: 891px;
+    top: 84px; }
+  .icon-insta-3:before {
+    left: 888px;
+    top: 82px; }
+  .icon-sms-1:before {
+    left: 780px;
+    top: 80px; }
+  .icon-sms-1:after {
+    left: 785px;
+    top: 83px; } }
+
+@media screen and (max-width: 785px) {
+  .icon-facebok:before {
+    top: 105px;
+    left: 600px; }
+  .icon-insta-1:after {
+    left: 636px;
+    top: 105px; }
+  .icon-insta-1:before {
+    left: 641px;
+    top: 109px; }
+  .icon-insta-3:before {
+    left: 639px;
+    top: 107px; }
+  .icon-sms-1:before {
+    top: 105px;
+    left: 558px; }
+  .icon-sms-1:after {
+    top: 106px;
+    left: 563px; } }
+
+@media screen and (max-width: 580px) {
+  .icon-facebok:before {
+    top: 273px;
+    left: 450px; }
+  .icon-insta-1:after {
+    left: 480px;
+    top: 272px; }
+  .icon-insta-1:before {
+    left: 485px;
+    top: 276px; }
+  .icon-insta-3:before {
+    left: 482px;
+    top: 275px; }
+  .icon-sms-1:before {
+    top: 274px;
+    left: 400px; }
+  .icon-sms-1:after {
+    top: 277px;
+    left: 405px; } }
