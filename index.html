@@ -10,6 +10,7 @@
     </head>
     <body>
         <div class="wrapper-site">
+          <div class="wrap-header">
             <header id="header" class="header">
                 <div class="nav-container">
                     <nav class="nav-wrap">
@@ -64,6 +65,7 @@
                     </div>
                 </div>
             </header>
+          </div>
             <main>
                 <div class="wrap-about">
                     <div class="heading-about-box">
@@ -105,11 +107,11 @@
                             <div class="img-colection-desc"> <p>Этнические маски</p></div>
                             <div class="colection-blur"><div class="img-colection-2"></div></div>
                         </div>
-                        <div class="box-img-colection ">
+                        <div class="box-img-colection none-img">
                             <div class="img-colection-desc"><p>часы</p></div>
                           <div class="colection-blur"><div class="img-colection-3"></div></div>
                        </div>
-                        <div class="box-img-colection ">
+                        <div class="box-img-colection  none-img-576">
                              <div  class="img-colection-desc"><p>животные</p></div>
                             <div class="colection-blur"><div class="img-colection-4"></div></div>
                         </div>
@@ -123,11 +125,11 @@
                             <div class="img-colection-desc"><p>геометрия</p></div>
                             <div class="colection-blur"><div class="img-colection-6"></div></div>
                         </div>
-                        <div class="box-img-colection ">
-                            <div class="img-colection-desc"><p>фоторомки</p></div>
+                        <div class="box-img-colection none-img">
+                            <div class="img-colection-desc"><p>фоторамки</p></div>
                             <div class="colection-blur"><div class="img-colection-7"></div></div>
                         </div>
-                        <div class="box-img-colection ">
+                        <div class="box-img-colection none-img-576">
                             <div class="img-colection-desc"><p>мудборды</p></div>
                             <div class="colection-blur"><div class="img-colection-8"></div></div>
                         </div>
@@ -271,7 +273,10 @@
     },
     {
       breakpoint:776,
-      settings: "unslick"
+      settings:{
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
     },
     {
       breakpoint: 578,
