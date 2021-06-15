@@ -687,7 +687,8 @@ main {
   .subtitle-about-box .subtitle-holder {
     padding-left: 90px; }
     .subtitle-about-box .subtitle-holder a {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #336699; }
     .subtitle-about-box .subtitle-holder .subtitle-slogan {
       text-transform: uppercase;
       font-weight: 700px;
