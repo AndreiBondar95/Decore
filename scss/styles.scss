@@ -117,7 +117,7 @@ main{
 	margin:0 auto;
 	@extend %flex-basic;
  padding-left:30px;
- max-width:$w-m;
+ width:100%;
  height:73px;
  
 
@@ -147,11 +147,15 @@ main{
 	position: relative;
 	@extend %flex-basic;
 	.nav-link-number{
+		font-weight:700;
 		font-size: 20px;
 		line-height:130%;
 		font-family:700;
 		padding-left:30px;
 		color: $col-1;
+		&:hover{
+			color: #3382D1;
+		}
 
 	}
     .nav-btn{
@@ -548,7 +552,7 @@ img{
 	line-height:24px;
 	text-decoration: underline;
 	margin-bottom:20px;
-	color:rgba(51, 102, 153, 0.5);
+	color:rgba(51, 102, 153, 0.8);
 	&:hover{
 		color:$col-1;
 		text-decoration: underline;
@@ -580,6 +584,8 @@ img{
 	bottom:-50px;
 	cursor: pointer;
 }
+
+	
 .slick-prev{
 	background-image:url('../img/Arrow-normal.svg');
 	background-repeat:no-repeat;
@@ -606,6 +612,9 @@ img{
 		color:$col-1;
 		text-align:left;
 		padding:0px 0px 40px 60px;
+		&:hover{
+			text-decoration:underline;
+		}
 		
 		&:before{
 			content:'';
@@ -677,10 +686,8 @@ img{
 	background:url('../img/Orel.svg');
 	background-repeat:no-repeat;
 	background-position:center;
-	background-size:300px;
 	position:absolute;
-	top:200px;
-	left:60px;
+	top:-70px;
 
 }
 .img-background-colection-2::before{
@@ -767,6 +774,10 @@ img{
 		line-height:50px;
 		text-decoration:underline;
 		text-align:center;
+		&:hover{
+			color: $col-1;
+			cursor:pointer;
+		}
 	  }
 	  
 	}
@@ -849,6 +860,7 @@ img{
 		  font-weight:600;
 	  }
 	  .input-form{
+		
 		  padding:10px;
 		  margin:0px 0px 0px 30px;
 		  width:435px;
@@ -879,7 +891,7 @@ img{
 	width:70px;
 	height:50px;
 	position:absolute;
-	top:0;
+	top:0px;
 	left:442px;
 &:hover{
 	background: $col-1;
@@ -1141,8 +1153,8 @@ max-width:992px;
 
 }
 .img-background-colection::before{
-	left: 80px;
-	top:150px;
+	background-size:300px;
+	top:-60px;
 }
 //-----------------------------Footer---------------------------------------
 .icon-facebok::after{
@@ -1212,6 +1224,25 @@ max-width:992px;
 }
 }
 @media all and(max-width:780px) {
+		.slick-prev{
+			background-image:none;
+			background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0.5) 114.03%);
+			width:45px;
+			height: 500px;
+			left:-24px;
+			bottom:-260px;
+			z-index:100;
+			cursor: pointer;
+		}
+		.slick-next{
+			background-image:none;
+			width:82px;
+			height:500px;
+			background: linear-gradient(79.17deg, rgba(255, 255, 255, 0.04) 7.94%, #FFFFFF 98.12%);
+			right:-24px;
+			bottom:-260px;
+			cursor: pointer;
+		}
 	.header{
 		width:100%;
 	}

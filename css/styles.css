@@ -558,7 +558,7 @@ main {
 .nav-wrap {
   margin: 0 auto;
   padding-left: 30px;
-  max-width: 1350px;
+  width: 100%;
   height: 73px; }
 
 .nav-box-link .nav-item {
@@ -578,11 +578,14 @@ main {
 .nav-box-basket-number {
   position: relative; }
   .nav-box-basket-number .nav-link-number {
+    font-weight: 700;
     font-size: 20px;
     line-height: 130%;
     font-family: 700;
     padding-left: 30px;
     color: #336699; }
+    .nav-box-basket-number .nav-link-number:hover {
+      color: #3382D1; }
   .nav-box-basket-number .nav-btn {
     position: relative;
     margin-left: 30px; }
@@ -883,7 +886,7 @@ main {
   line-height: 24px;
   text-decoration: underline;
   margin-bottom: 20px;
-  color: rgba(51, 102, 153, 0.5); }
+  color: rgba(51, 102, 153, 0.8); }
   .sale-link:hover {
     color: #336699;
     text-decoration: underline; }
@@ -937,6 +940,8 @@ main {
     color: #336699;
     text-align: left;
     padding: 0px 0px 40px 60px; }
+    .gallery-footer-wrap .gallery-footer-link:hover {
+      text-decoration: underline; }
     .gallery-footer-wrap .gallery-footer-link:before {
       content: '';
       line-height: 100%;
@@ -1000,10 +1005,8 @@ main {
   background: url("../img/Orel.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 300px;
   position: absolute;
-  top: 200px;
-  left: 60px; }
+  top: -70px; }
 
 .img-background-colection-2::before {
   content: '';
@@ -1081,6 +1084,9 @@ main {
       line-height: 50px;
       text-decoration: underline;
       text-align: center; }
+      .footer-wrap .footer-heading h2:hover {
+        color: #336699;
+        cursor: pointer; }
 
 .footer-nav-wrap {
   position: relative;
@@ -1168,7 +1174,7 @@ main {
   width: 70px;
   height: 50px;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 442px; }
   .btn-footer:hover {
     background: #336699;
@@ -1352,8 +1358,8 @@ main {
       top: 76px;
       left: 27px; }
   .img-background-colection::before {
-    left: 80px;
-    top: 150px; }
+    background-size: 300px;
+    top: -60px; }
   .icon-facebok::after {
     display: none; }
   .footer-wrap .footer-desc-wrap.none-1200 {
@@ -1399,6 +1405,23 @@ main {
     margin-bottom: 60px; } }
 
 @media all and (max-width: 780px) {
+  .slick-prev {
+    background-image: none;
+    background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0.5) 114.03%);
+    width: 45px;
+    height: 500px;
+    left: -24px;
+    bottom: -260px;
+    z-index: 100;
+    cursor: pointer; }
+  .slick-next {
+    background-image: none;
+    width: 82px;
+    height: 500px;
+    background: linear-gradient(79.17deg, rgba(255, 255, 255, 0.04) 7.94%, #FFFFFF 98.12%);
+    right: -24px;
+    bottom: -260px;
+    cursor: pointer; }
   .header {
     width: 100%; }
   .slick-slider {
